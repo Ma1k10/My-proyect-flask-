@@ -1,0 +1,16 @@
+{% extends 'template_base.html' %}
+
+
+{% block content %}
+<form action="" method="POST">
+    <label for="">Codigo</label>
+    <input type="text" id="codigo" name="codigo">
+    <label for="">Descripcion</label>
+    <input type="text" id="descripcion" name="descripcion">
+    <label for="">Stock</label>
+    <input type="number" step="1" id="stock" name="stock">
+    <label for="">Precio</label>
+    <input type="number" step="0.01" id="precio" name="precio">
+    <button class= "form-control btn btn-success" type="submit">Agregar</button>
+</form>
+{% endblock %}
